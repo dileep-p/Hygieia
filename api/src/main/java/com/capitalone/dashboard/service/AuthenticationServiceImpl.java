@@ -1,12 +1,11 @@
 package com.capitalone.dashboard.service;
 
+import com.capitalone.dashboard.model.Authentication;
+import com.capitalone.dashboard.repository.AuthenticationRepository;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
-
-import com.capitalone.dashboard.model.Authentication;
-import com.capitalone.dashboard.repository.AuthenticationRepository;
 
 @Service
 public class AuthenticationServiceImpl implements AuthenticationService {
@@ -84,4 +83,5 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         }
         return flag;
     }
+
 }
